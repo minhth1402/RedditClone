@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         // ContainOnClikcListener
         ContainOnClikcListener();
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+
     }
 
     private void ContainOnClikcListener() {
